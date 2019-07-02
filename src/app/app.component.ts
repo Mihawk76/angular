@@ -32,6 +32,11 @@ export class AppComponent implements OnInit {
     qualification: "M.C.A",  
     technology: "Angular"  
   };
+  friends = [
+    {id: 1, name:'John', age:25},
+    {id: 2, name:'Mary', age:40},
+    {id: 3, name:'Peter', age:85}
+  ];
    
   constructor(private http: HttpClient){
   }

@@ -21,9 +21,30 @@
 test {{ parsedJsons }} {{ parsedJsons[0].value }}<br>
 {{ parsedJsons[1].id }} {{ parsedJsons[1].value }}<br>
 percobaan
-<div class = "list" ng-repeat=" in parsedJsons">
-  {{parsedJsons.id}} test
-</div>
-weird
+<br><br>
+repeat bottom
+<body ng-app="AppComponent" ></body>
+<ul class="friends">
+  <li *ngFor="let friend of friends">
+    {{friend.id}} {{friend.name}} {{friend.age}}
+  </li>
+</ul>
 
+weird<br>
+<ul class="parsedJsons">
+  <li *ngFor="let X of parsedJsons">
+   {{X.id}} {{X.timeStamps}} {{X.value}}
+  </li>
+</ul>
+{{friend}}
+{{ parsedJsons[0].id }} {{ parsedJsons[0].value }}
+<br>
+{{ parsedJsons[1].id }} {{ parsedJsons[1].value }}
+<ul class="example-animate-container">
+  <li class="animate-repeat" ng-repeat="friend in friends">
+    {{friends[0].age}}   years old.
+  </li>
+</ul>
+<br>
+friends
 <router-outlet></router-outlet>
